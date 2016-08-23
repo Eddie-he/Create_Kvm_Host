@@ -18,3 +18,7 @@
 备注：脚本具体使用和实际环境需要自己修改
 
 demo环境网络为192.168.1.0/24需要安装 yum install libguestfs-tools 工具在宿主机才能修改模板镜像IP和主机名
+
+模板镜像可以自己制作，在xml目录有具体制作方法，demo模板我通过百度网盘分享如下：
+
+链接: https://pan.baidu.com/s/1jH9uunO 密码: sdk3
