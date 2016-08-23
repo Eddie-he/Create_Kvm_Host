@@ -1,0 +1,8 @@
+1.这个文件是模板镜像文件，镜像文件默认50G磁盘空间，由于太大这里以空文件代替，实际使用请制作KVM虚拟机模板。
+2.KVM虚拟机模板制作示例步骤如下：
+   a.ssh this.vm;rm -rf /etc/udev/*70*net
+   a.virsh shutdown this.vm
+   b.cp /var/lib/libvirt/images/{this-vm,that-vm}.img
+   c.virsh dumpxml this-vm > /tmp/that-vm.xml
+   
+

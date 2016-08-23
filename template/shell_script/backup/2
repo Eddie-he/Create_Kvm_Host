@@ -1,0 +1,14 @@
+#!/bin/sh
+function Check_Ip(){
+	for i in {100..150}
+	do
+	    ping -c 1 192.168.1.$i >/dev/null
+	    if [ $?==!0 ];then
+	    	VIP="192.168.1.$i"	
+                arr[$a]=$VIP
+                echo ${arr[$a]}
+	    fi
+	done
+}
+echo -e "可用IP地址如下：\n"
+Check_Ip
