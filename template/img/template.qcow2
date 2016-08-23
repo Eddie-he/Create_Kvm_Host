@@ -4,5 +4,7 @@
    a.virsh shutdown this.vm
    b.cp /var/lib/libvirt/images/{this-vm,that-vm}.img
    c.virsh dumpxml this-vm > /tmp/that-vm.xml
-   
-
+3.删除虚拟机示例步骤如下：
+   a.virsh shutdown this.vm
+   b.virsh undefine this.vm
+   c.rm -rf /var/lib/libvirt/images/this.vm.img
